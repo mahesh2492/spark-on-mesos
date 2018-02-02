@@ -1,0 +1,7 @@
+*.class
+*.log
+
+# Simple Build Tool
+
+target/
+.idea/
