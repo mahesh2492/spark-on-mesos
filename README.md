@@ -1,5 +1,6 @@
 # spark-on-mesos wordcount-example
 
+Simple word count example using spark and running it on mesos.
 
 # Clone the repo
 
@@ -31,7 +32,7 @@ sbt assembly
  
  ```
  cd spark-2.2.0-bin-hadoop2.7
- ./bin/spark-submit --class "rdd.WordCount" --master mesos://127.0.0.1:5050 file:///target/scala-2.11/spark-on-mesos-assembly-1.0.jar
+ ./bin/spark-submit --class "rdd.WordCount" --master mesos://127.0.0.1:5050 file://path/target/scala-2.11/spark-on-mesos-assembly-1.0.jar
 ```
 
 
