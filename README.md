@@ -1,6 +1,7 @@
 # spark-on-mesos wordcount-example
 
-Simple word count example using spark and running it on mesos.
+Simple word count example using spark and running it on mesos. For basic configuration to run spark on mesos [refer]
+(https://blog.knoldus.com/2017/10/09/spark-on-mesosinstallation/)
 
 # Clone the repo
 
@@ -27,6 +28,13 @@ To run it on mesos, first create the jar to deploy. For that run following comma
 sbt assembly
  ```
  It will create the fat jar of wordcount application.
+ 
+ # Run mesos master and slave
+ ```
+ cd build
+ ./bin/mesos-master.sh --ip=127.0.0.1 --work_dir=/tmp/mesos
+ ./bin/mesos-slave.sh --master=127.0.0.1:5050 --work_dir=/tmp/mesos --no-systemd_enable_support
+ ```
  
  Deploy the jar using spark-submit
  
