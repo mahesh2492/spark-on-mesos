@@ -1,7 +1,7 @@
 # spark-on-mesos wordcount-example
 
-Simple word count example using spark and running it on mesos. For basic configuration to run spark on mesos [refer]
-(https://blog.knoldus.com/2017/10/09/spark-on-mesosinstallation/)
+Simple word count example using spark and running it on mesos. For basic configuration to run spark on mesos 
+[refer](https://blog.knoldus.com/2017/10/09/spark-on-mesosinstallation/)
 
 # Clone the repo
 
