@@ -1,7 +1,11 @@
+package rdd
 import com.typesafe.config.ConfigFactory
 import org.apache.spark.{SparkConf, SparkContext}
+
 /*
+
 Simple word count example running on mesos
+
  */
 
 object WordCount extends App{

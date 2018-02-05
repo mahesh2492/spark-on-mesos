@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
 
 conflictManager := ConflictManager.latestRevision
 
-mainClass := Some("WordCount")
+mainClass := Some("rdd.WordCount")
 
 assemblyMergeStrategy in assembly := {
   case PathList("META-INF", xs @ _*) => MergeStrategy.discard
